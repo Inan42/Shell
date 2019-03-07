@@ -1,3 +1,5 @@
+#compile and run tests
+
 FILES := procline.c userin.c runcommand.c handlers.c shell.h  
 CC		= gcc
 CFLAGS := -g -Og -std=gnu99 
@@ -7,8 +9,6 @@ all: handlers test_run test_run_loop
 shell: $(FILES)
 	cc -o shell  $(FILES) 
     
-
-	
 test_run: test_run.c 
 	cc -o test_run test_run.c 	
 	
